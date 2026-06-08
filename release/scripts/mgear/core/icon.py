@@ -442,6 +442,7 @@ def circle(
 
     """
     dlen = width * 0.5
+    degree = 3
 
     v0 = datatypes.Vector(0, 0, -dlen * 1.108)
     v1 = datatypes.Vector(dlen * 0.78, 0, -dlen * 0.78)
@@ -455,7 +456,6 @@ def circle(
     points = getPointArrayWithOffset(
         [v0, v1, v2, v3, v4, v5, v6, v7], pos_offset, rot_offset
     )
-
     node = curve.addCurve(parent, name, points, True, degree, m)
 
     setcolor(node, color)

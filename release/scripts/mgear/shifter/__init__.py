@@ -19,6 +19,7 @@ from mgear.core import primitive, attribute, skin, dag, icon, node
 from mgear import shifter_classic_components
 from mgear import shifter_epic_components
 from mgear import shifter_abs_components
+from mgear import shifter_pk_components
 from mgear.shifter import naming
 import importlib
 from mgear.core import utils as core_utils
@@ -69,6 +70,7 @@ def getComponentDirectories():
                 os.path.join(os.path.dirname(shifter_classic_components.__file__)),
                 os.path.join(os.path.dirname(shifter_epic_components.__file__)),
                 os.path.join(os.path.dirname(shifter_abs_components.__file__)),
+                os.path.join(os.path.dirname(shifter_pk_components.__file__)),
             ],
         )
     return _component_directories_cache
